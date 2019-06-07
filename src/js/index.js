@@ -13,7 +13,7 @@ $("input[type=tel]").mask("+7(000)000-00-00");
 /**
  * Появление а/м при скролле
  */
-/*$(window).on("scroll", function () {
+$(window).on("scroll", function () {
     var showcase = $(".showcase__cars").position().top;
     var position = $(this).scrollTop() + window.innerHeight - 300;
     if (position > showcase) {
@@ -21,7 +21,7 @@ $("input[type=tel]").mask("+7(000)000-00-00");
         animatedCounter();
         $(this).off("scroll");
     }
-});*/
+});
 
 /**
  * Анимация счётчика
@@ -44,7 +44,7 @@ $("input[type=tel]").mask("+7(000)000-00-00");
 /**
  * Появление а/м при скролле
  */
-/*$(window).on("scroll", function () {
+$(window).on("scroll", function () {
     var showcase = $(".showcase__cars").position().top;
     var position = $(this).scrollTop() + window.innerHeight - 300;
     if (position > showcase) {
@@ -52,7 +52,7 @@ $("input[type=tel]").mask("+7(000)000-00-00");
         animatedCounter();
         $(this).off("scroll");
     }
-});*/
+});
 
 /**
  * Анимация счётчика

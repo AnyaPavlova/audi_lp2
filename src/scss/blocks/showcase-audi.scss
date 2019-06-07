@@ -1,0 +1,103 @@
+.showcase-audi {
+
+  &__model_in_stock {
+    background-color: #0d0d0d;   
+  }
+  &__models {
+    justify-content: space-between;
+    padding-right: 120px;
+  }
+  &__model-row a {
+    font-family: AudiTENormal;
+    color: #bb0a30;
+  }
+  &__cars {
+
+  }
+  &__item {
+    flex-basis: 50%;
+    margin: 0;
+
+    &:hover {
+      box-shadow: none;
+      background-color: #f2f2f2;
+      cursor: pointer;
+
+      .showcase-audi__img-bg {
+        color: #ffffff;
+      }
+    }
+  }
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+  .showcase-audi__in-stock {
+    width: 50px;
+    height: 50px;
+    line-height: 35px;
+  }
+  &__in-stock-text {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+  }
+  &__head-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__photo {
+    position: relative;
+    margin-top: 10px;
+  }
+  &__img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 5;
+  }
+  &__img-bg {
+    position: absolute;
+    top: -75px;
+    right: -15px;
+    left: auto;
+    z-index: 3;
+    font-family: AudiTNormal;
+    color: #e5e5e5;
+    font-size: 225px;
+  }
+  &__main-info {
+    margin-top: 10px;
+    align-items: center;
+
+    .item__head-header {
+      margin-bottom: 0;
+      min-height: auto;
+      font-size: 26px;
+      letter-spacing: -0.01em;
+    }
+    .item__head-header-text {
+      font-size: 20px;
+    }
+
+    &--dop {
+      align-items: flex-start;
+    }
+  }
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__btns {
+    .btn {
+      width: 100%;
+    }
+  }
+}
