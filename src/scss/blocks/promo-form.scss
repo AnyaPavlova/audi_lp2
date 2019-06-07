@@ -1,0 +1,58 @@
+.promo-form {
+
+  @media all and (max-width:991px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 312px;
+  }
+  input[type=tel], input[type=text] {
+    border-bottom: none;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 312px;
+    padding-left: 15px;
+    padding: 17px 0 17px 15px;
+    font-family: AudiTENormal;
+    font-size: 16px;
+  }
+
+  .btn {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    width: 100%;
+    max-width: 312px;
+  }
+  input[type=checkbox]+label span {
+    display: inline-block;
+    width: calc( 100% - 30px );
+    vertical-align: middle;
+  }
+  input[type=checkbox]+label:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  input[type=checkbox]:not(:checked)+label:before {
+    background-color: transparent;
+    border: 1px solid #747474;
+    content: '';    
+  }
+  input[type=checkbox]:checked+label:before {
+    border: 1px solid #747474;
+    background: url(../img/check.png) no-repeat center;
+    background-size: 80%;
+    content: '';
+  }
+  input[type=checkbox]+label {
+    color: #747474;
+
+    a {
+      color: #747474;
+      text-decoration: underline;
+    }
+  }
+  .form-block__privacy {
+    margin: 0;
+  }
+}

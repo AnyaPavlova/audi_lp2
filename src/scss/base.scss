@@ -1,6 +1,7 @@
 @include font-face("AudiTEBold","../fonts/AudiTEBold/AudiType-ExtendedBold");
 @include font-face("AudiTENormal","../fonts/AudiTENormal/AudiType-ExtendedNormal");
 @include font-face("AudiTNormal","../fonts/AudiTNormal/AudiType-Normal");
+@include font-face("ruble","../fonts/ruble/ruble");
 
 a {
   text-decoration: none;
@@ -54,6 +55,14 @@ a {
   &:hover{
         color:#fff;
     background-color: #bb0a30;
+  }
+}
+.btn-red {
+  background-color: #bb0a30;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 

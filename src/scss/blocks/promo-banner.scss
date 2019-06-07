@@ -1,0 +1,243 @@
+.promo-banner {
+  background: linear-gradient(to bottom, #171717 0%, #171717 99.9%, #ffffff 99.9%, #ffffff 100% );
+  position: relative;  
+
+  &__bg {
+    position: relative;
+
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+    }
+
+    @media all and (max-width:991px) {
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #171717;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__info {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    justify-content: space-between;
+
+    &:after {
+      display: none;
+    }
+    
+    @media all and (max-width:991px) {
+      position: initial;
+      background-color: #171717;
+      padding-top: 10px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__main-info {
+    width: 470px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      width: 370px; 
+    }
+    @media all and (max-width:991px) {
+      width: 100%;
+    }
+  }
+
+  &__numbers {
+    width: 340px;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      width: 270px; 
+    }
+    @media all and (max-width:991px) {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 15px;
+      padding-top: 10px;
+    }
+    @media all and (max-width:575px) {
+      justify-content: space-between;
+      max-width: calc( 100% - 30px );
+      margin: auto;
+    }
+  }
+
+  &__title {
+    font-family: AudiTEBold;
+    font-size: 36px;
+    line-height: 1.65;
+    letter-spacing: -0.075em;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      font-size: 24px; 
+    }
+    @media all and (max-width:991px) {
+      font-size: 21px;
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    font-family: AudiTENormal;
+    font-size: 48px;
+    color: #bb0a30;
+    margin: 0;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      font-size: 36px;
+    }
+    @media all and (max-width:991px) {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+  &__welcome {
+    font-family: AudiTNormal;
+    font-size: 20px;
+
+    @media all and (max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media all and (max-width:991px)  {
+      text-align: center;
+    }
+
+  }
+  
+}
+
+.promo-num {
+
+  padding-left: 78px;
+
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media all and (max-width: 1199px) {
+    padding-left: 70px;
+  } 
+  @media all and (max-width:991px) {
+    width: 33.333333%;
+    background-size: contain !important;
+    background-position-x: left !important;
+    margin-top: 15px;
+  }
+  @media all and (max-width:767px) {
+    padding-left: 40px;
+    background-size: auto 20px !important;
+  }
+  @media all and (max-width:575px) {
+    padding-left: 0;
+    padding-top: 30px;
+    background-position-y: top !important;
+    background-size: auto 20px !important;
+    width: 50%;
+  }
+
+  &__digit {
+    font-family: AudiTEBold;
+    color: #bb0a30;
+    font-size: 48px;
+    letter-spacing: -0.1em;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      font-size: 38px;
+    }
+    @media all and (max-width:991px) {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-family: AudiTNormal;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 10px;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      font-size: 16px;
+    }
+    @media all and (max-width:991px) {
+      font-size: 12px;
+    }
+    @media all and (max-width:575px) {
+      padding-right: 5px;
+    }
+  }
+
+  &--availability {
+    background:url(../img/promo-num-1.png) no-repeat 2px center;
+
+    @media all and (min-width:992px) and (max-width: 1199px) {
+      background-size: contain;
+    } 
+  }
+  &--casco {
+   background:url(../img/promo-num-2.png) no-repeat 1px center; 
+  }
+  &--overpayment {
+   background:url(../img/promo-num-3.png) no-repeat 11px center; 
+
+   @media all and (min-width:992px) and (max-width: 1199px) {
+      background-size: contain;
+    } 
+  }
+  &--tradein {
+   background:url(../img/promo-num-4.png) no-repeat 0px center; 
+  }
+  &--years {
+   background:url(../img/promo-num-5.png) no-repeat 15px center; 
+  }
+  &--line {
+    flex-wrap: wrap;    
+
+    .promo-num__digit {
+      font-size: 36px;
+      letter-spacing: -0.01em;
+      width: 100%;
+
+      @media all and (min-width:992px) and (max-width: 1199px) {
+        font-size: 26px;
+      }
+      @media all and (max-width:991px) {
+        font-size: 18px;
+      }
+    }
+    .promo-num__text {
+      padding-left: 0;
+      padding-top: 3px;
+      width: 100%;
+    }
+  }
+}
+.ruble-icon {
+  font-family: 'ruble';
+}

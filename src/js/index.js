@@ -1,7 +1,7 @@
 /*require("./timer");*/
 require("./carousel")
 require("./select");
-require("./script-service.js");
+/*require("./script-service.js");*/
 import "@fancyapps/fancybox";
 import tippy from "tippy.js";
 tippy(".icon__question",{
