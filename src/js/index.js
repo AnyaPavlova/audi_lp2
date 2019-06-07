@@ -2,6 +2,7 @@
 require("./carousel")
 require("./select");
 /*require("./script-service.js");*/
+require("./audi-lp2.js");
 import "@fancyapps/fancybox";
 import tippy from "tippy.js";
 tippy(".icon__question",{
