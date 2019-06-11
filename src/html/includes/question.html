@@ -1,50 +1,33 @@
-<section class="question" data-section="question" id="question">
-    <h3 class="inline__header-h">У вас есть вопросы? Спросите у специалиста</h3>
+<section class="question question2" data-section="question" id="question">
+    <h3 class="inline__header-h question2__title">У вас есть вопросы? <br>Звоните <a href="tel:+78125011345">+7 (812) 501-13-45</a> </h3>
     <div class="container question__content">
-        <div class="row">
-            <div class="col-xl-6 question__left_block">
-                <img src="img/question-service.jpg">
-            </div>
-            <div class="col-xl-6 question__right-block">
-                <p class="question__text">Вы можете оставить заявку на консультацию.</p>
-                <form method="post" class="form" action="/">
-                    <div class="form-block">
-                        <label for="phone">Телефон</label>
-                        <input name="phone" id="phone" type="tel" placeholder="+7 999 999 99 99"/>
+        <p class="question__text question2__text">Вы можете оставить заявку на консультацию и наши менеджеры помогут Вам найти автомобиль и ответить на все вопросы.</p>
+        <div class="question2__form">
+            <form method="post" class="form promo-form" action="/">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        
+                            <input name="phone" id="phone" type="tel" placeholder="Телефон"/>
+                        
                     </div>
-                    <div class="form-block__privacy">
-                        <div class="form-block">
-                            <input type="checkbox" name="privacy" id="privacy_line"/>
-                            <label for="privacy_line">Согласие на обработку персональных данных</label>
-                        </div>
-                        <div class="form-block">
-                            <input type="checkbox" name="reklama" id="reklama_line"/>
-                            <label for="reklama_line">Согласие на получение рекламной информации Audi</label>
-                        </div>
+                    <div class="col-12 col-lg-6 col-xl-6">
+                        <input type="submit" class="btn btn-red" value="Получить спецпредложение"/>
                     </div>
-                    <input type="submit" class="btn btn-black" value="Отправить заявку"/>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row question__pl">
-            <div class="col-xl-3 question__pl__item">
-                <img src="img/contacts_pl.svg" alt="">
-                <a data-src="#callback" data-fancybox href="#" class="question__pl__text">Обратная связь</a>
-            </div>
-            <div class="col-xl-3 question__pl__item">
-                <img src="img/test_pl.svg" alt="">
-                <a data-src="#callback" data-fancybox href="#" class="question__pl__text">Запись на тест-драйв</a>
-            </div>
-            <div class="col-xl-3 question__pl__item">
-                <img src="img/diler_pl.svg" alt="">
-                <a data-src="#callback" data-fancybox href="#" class="question__pl__text">Запрос дилеру</a>
-            </div>
-            <div class="col-xl-3 question__pl__item">
-                <img src="img/service_pl.svg" alt="">
-                <a data-src="#callback" data-fancybox href="#" class="question__pl__text">Запись в сервисный центр</a>
-            </div>
+                </div>
+                
+                
+                <div class="form-block__privacy question2__privacy">
+                  <div class="form-block">
+                    <input type="checkbox" name="privacy" id="privacy_line3"/>
+                    <label for="privacy_line3"><span>Согласие на <a href="#">обработку персональных данных</a></span></label>
+                  </div>
+                  <div class="form-block">
+                    <input type="checkbox" name="reklama" id="reklama_line3"/>
+                    <label for="reklama_line3"><span>Согласие на <a href="">получение рекламной информации Audi</a></span></label>
+                  </div>
+                </div>       
+              </form>
         </div>
     </div>
 </section>
+

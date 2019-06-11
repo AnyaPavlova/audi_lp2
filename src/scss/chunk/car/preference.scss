@@ -22,28 +22,38 @@
 }
 .preference__icon{
   display: block;
-  @include normal16;
+  @include normal18;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  padding: 6px 0 6px 35px;
   &::before{
     display: inline-block;
     margin-right: 10px;
     vertical-align: text-top;
   }
-  &.test::before{
-    content:url("../img/icon_test.png");
+  &.test {
+    background: url("../img/icon_test.png") no-repeat left center;
   }
-  &.cafe::before{
-    content:url("../img/icon_cafe.png");
+  &.cafe {
+    background: url("../img/icon_cafe.png") no-repeat 3px center;
   }
-  &.atmosphere::before{
-    content:url("../img/icon_atm.png");
+  &.atmosphere {
+    background: url("../img/icon_atm.png") no-repeat left center;
   }
-  &.child::before{
-    content:url("../img/icon_child.png");
+  &.child {
+    background: url("../img/icon_child.png") no-repeat left center;
   }
-  &.biblio::before{
-    content:url("../img/icon_biblio.png");
+  &.biblio {
+    background: url("../img/icon_biblio.png") no-repeat left center;
+  }
+  &--venue {
+    background:  url("../img/geofence-small.png") no-repeat left center;
+  }
+  &--oneday {
+    background:  url("../img/warranty-small.png") no-repeat 3px center;
+  }
+  &--choise {
+    background:  url("../img/used-cars-small.png") no-repeat left center;
   }
 }
 @include media-breakpoint-down($mobile_version){

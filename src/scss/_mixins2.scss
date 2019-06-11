@@ -25,6 +25,9 @@
 @mixin normal16{
   @include customNormal(16);
 }
+@mixin normal18{
+  @include customNormal(18);
+}
 
 @mixin normal21{
   @include customNormal(21);

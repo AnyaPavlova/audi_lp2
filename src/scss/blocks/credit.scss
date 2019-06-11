@@ -1,0 +1,55 @@
+.credit {
+
+	position: relative;
+
+	&__bg  img {
+		width: 100%;
+		display: block;
+	}
+	&__info {
+		z-index: 2;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	&__top-block {
+		position: absolute;
+		top: 50px;
+	}
+	&__title {
+		font-family: AudiTEBold;
+		color: #ffffff;
+		font-size: 32px;
+		margin-bottom: 35px;
+	}
+	&__btn {
+		min-width: 255px;
+	}
+	&__bottom-block {
+		position: absolute;
+		bottom: 60px;
+		width: 100%;
+	}
+}
+.credit-item {
+
+	&__text {
+		font-size: 20px;
+		line-height: 1.2;
+		color: #ffffff;
+		font-family: AudiTNormal;
+		display: block;
+	}
+	&__main {
+		margin-top: 17px;
+		font-size: 32px;
+		font-family: AudiTEBold;
+		color: #bb0a30;
+		letter-spacing: -0.01em;
+		display: block;
+	}
+}

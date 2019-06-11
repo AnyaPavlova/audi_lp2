@@ -1,0 +1,33 @@
+.question2 {
+	text-align: center;
+	margin-bottom: 60px;
+
+	&__title {
+		line-height: 1.5;
+
+		a {
+			color: #bb0a30;
+		}
+	}
+	&__text {
+		max-width: 530px;
+		margin: auto;
+		line-height: 1.5;
+	}
+	&__form {
+		.row {
+			max-width: 650px;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	}
+	&__privacy {
+		max-width: 365px;
+		margin: auto !important;
+		text-align: left;
+	}
+}
+.question2 input[type=tel], .question2 input[type=text] {
+	border: 1px solid #949494;
+}

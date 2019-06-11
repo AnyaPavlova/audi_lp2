@@ -1,8 +1,6 @@
 .best-offer {
 
   background-color: #fefefe;
-  //background-color: pink;
-  padding-bottom: 20px;
 
   &__top {
 	background:url(../img/best-offer-bg.jpg) no-repeat center top;
@@ -42,4 +40,9 @@
     margin-top: -200px;
 
   }
+}
+.preference__block .inline__header {
+  background: #fefefe;
+  margin: 0;
+  padding: 30px;
 }
