@@ -1,0 +1,110 @@
+.slider-offer {
+
+	&__item {
+		width: 100%;
+		background-color: #ffffff;
+		padding: 30px;
+		  box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+	}
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	img {
+		width: auto !important;
+		max-width: 100%;
+	}
+	&__main {
+		width: 35%;
+		padding-left: 10px;
+	}
+	&__info {
+		width: 65%;
+		padding-left: 70px;
+	}
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		position: relative;
+		z-index: 4;
+
+		img {
+			padding-right: 10px;
+		}
+	}
+	&__photo {
+		position: relative;
+		padding: 50px 60px 30px 0;
+	}
+	&__img {
+		max-width: 100%;
+		position: relative;
+		z-index: 5;
+	}
+	&__bg {
+		position: absolute;
+	    top: -60px;
+	    right: 0px;
+	    left: auto;
+	    z-index: 3;
+	    font-family: AudiTNormal;
+	    color: #e5e5e5;
+	    font-size: 225px;
+
+	    @media all and (max-width:991px) {
+	      color: #ffffff;
+	    }
+	    @media all and (max-width: 575px) {
+	      font-size: 130px;
+	      top: 0;
+	    }
+	}
+	&__title {
+		font-family: AudiTENormal;
+		font-size: 32px;
+		letter-spacing: -0.01em;
+		padding-bottom: 35px;
+		margin-bottom: 0;
+
+		strong {
+			font-family: AudiTEBold;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 10px;
+		font-family: AudiTNormal;
+		align-items: flex-start;
+	}
+	&__col {
+		width: 50%;
+		font-size: 16px;
+
+		strong {
+			font-family: AudiTEBold;
+			font-size: 22px;
+		}
+		.old-price {
+			font-family: AudiTENormal;
+			text-decoration: line-through;
+		}
+		.new-price {
+			font-size: 32px;
+			color: #bb0a30;
+			font-family: AudiTEBold;
+		}
+		.small {
+			font-size: 22px;
+		}
+		p {
+			margin-top: 0;
+		}
+	}
+	&__btn {
+		padding-left: 60px;
+		padding-right: 60px;
+		font-family: AudiTEBold;
+	}
+
+}

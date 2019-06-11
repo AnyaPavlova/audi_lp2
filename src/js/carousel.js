@@ -8,19 +8,22 @@ car_items.on("initialized.owl.carousel", function (e) {
     $(".special_block__carousel-counter .owl-counter").html("1 / <span>" + e.item.count+"</span>");
 });
 owl.owlCarousel({
-    loop: true,
+    oop: false,
     thumbs: false,
     // nav:true,
     // autoWidth:true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
+    autoplay: false,
+    autoplayTimeout: 10000,
+    autoplayHoverPause: false,
     items: 1,
     lazyLoad: true,
     itemsDesktop: ["100%", 1],
     itemsDesktopSmall: ["100%", 1],
     itemsMobile: ["100%", 1],
-    itemsTablet: ["100%", 1]
+    itemsTablet: ["100%", 1],
+    URLhashListener:true,
+    startPosition: 'q8',
+    dotsContainer: '.best-offer__nav'
 });
 
 /**
