@@ -10,6 +10,10 @@ tippy(".icon__question",{
     arrow:true,
     placement: "bottom"
 });
+tippy(".car-item-icon",{
+    arrow:true,
+    placement: "bottom"
+});
 import "jquery-mask-plugin";
 $("input[type=tel]").mask("+7(000)000-00-00");
 /**

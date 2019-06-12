@@ -10,11 +10,22 @@
 		font-size: 32px;
 		letter-spacing: -0.01em;
 		margin-top: 35px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		text-align: center;
 	}
 	&__more {
-		margin-top: 25px;
+		margin-top: 35px;
+		font-size: 16px;
+		font-family: AudiTNormal;
+		text-align: center;
+
+		a:after {
+			content: "";
+			display: inline-block;
+			width: 18px;
+			height: 8px;
+			background: url(../img/btn-all-after.png) no-repeat right center;
+		}
 	}
 }
 .car-item {
@@ -37,19 +48,172 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
+		position: relative;
+		z-index: 2;
 
 	}
 	&__icons {
 		position: absolute;
 		top: 20px;
 		left: -15px;
+		z-index: 3;
 	}
-	&__gallery {
+	&__block-photo {
 		width: 353px;
 		max-width: 100%;
+		position: relative;
+	}
+	&__options,
+	&__offer {
+		width: calc( ( 100% - 353px ) / 2 );
+	}
+	&__options {
+		padding-left: 40px;
+	}
+	&__name {
+		font-family: AudiTEBold;
+		font-size: 32px;
+		letter-spacing: -0.01em;
+	}
+	&__equipment {
+		font-size: 16px;
+		color: #767676;
+		font-family: AudiTEBold;
+		padding-top: 3px;
+	}
+	&__opt-list {
+		list-style: none;
+		padding-left: 0;
+	}
+	&__opt {
+		padding-left: 65px;
+		position: relative;
+		padding: 15px 0 15px 65px;
+		font-family: AudiTENormal;
+		font-size: 16px;
+
+		strong {
+			font-family: AudiTEBold;
+		}
+		&--power {
+			background:url(../img/pover-icon.png) no-repeat left center;
+			background-size: 48px 17px;
+		}
+		&--transmission {
+			background:url(../img/transmission-icon.png) no-repeat 3px center;
+			background-size: 34px 24px;
+		}
+		&--driving {
+			background:url(../img/driving-icon.png) no-repeat left center;
+			background-size: 38px 30px;
+		}
+		&--fuel {
+			background:url(../img/fuel-icon.png) no-repeat 7px center;
+			background-size: 28px 33px;
+		}
+	}
+	&__offer {
+		text-align: right;
+
+		p {
+			padding-right: 35px;
+			margin-top: 0;
+			margin-bottom: 0;
+
+			strong {
+				font-family: AudiTEBold;
+			}
+		}
+	}
+	&__question {
+		position: absolute;
+		right: 0;
+	}
+	&__offer-text {
+		font-family: AudiTENormal;
+		padding-bottom: 15px;
+	}
+	&__price {
+		font-size: 26px;
+		color: #bb0a30;
+		font-family: AudiTEBold;
+		padding-bottom: 18px;
+
+		strong {
+			font-size: 32px;
+		}
+		.icon__question {
+			top: 5px;
+			background-image: url(../img/question_car-big.png);
+			background-size: contain;
+		}
+	}
+	&__btn {
+		font-family: AudiTEBold;
+		width: 100%;
+		max-width: 371px;
+		height: 67px;
+		margin-top: 7px;
+		font-size: 16px;
+	}
+	&__gallery {
+		padding-bottom: 35px;
+		
 
 		img {
 			width: 100%;
 		}
+		.owl-dots {
+			position: absolute;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding-top: 20px;
+		}
+		.owl-dot {
+			display: block;
+			width: 20px;
+			height: 8px;
+			background-color: #484848 !important;
+			margin-left: 1px;
+			margin-right: 1px;
+			outline: 0;
+
+			&.active {
+				background-color: #d1d1d1 !important;
+			}
+		}
+		.owl-nav {
+			position: absolute;
+			bottom: 24px;
+			width: 100%;
+		}
+		.owl-prev,
+		.owl-next {
+			outline: 0;
+
+			&:active {
+				outline: 0;
+			}
+		}
+		.owl-prev {
+			display: block;
+			position: absolute;
+			width: 14px;
+			height: 24px;
+			left: 0;
+			background:url(../img/prev-slide-car.png) !important;
+			z-index: 6;
+		}
+		.owl-next {
+			display: block;
+			position: absolute;
+			width: 14px;
+			height: 24px;
+			right: 0;
+			background:url(../img/next-slide-car.png) !important;
+			z-index: 6;
+		}
 	}
+	
 }
