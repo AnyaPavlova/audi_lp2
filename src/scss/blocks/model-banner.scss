@@ -1,0 +1,65 @@
+.model-banner {
+	position: relative;
+	color: #ffffff;
+
+	&__bg {
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	&__info {
+		z-index: 2;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+	}
+
+	&__left-block {
+		position: absolute;
+		top: 55px;
+		max-width: 415px;
+	}
+	&__subtitle {
+		margin: 0 0 25px;
+		font-family: AudiTEBold;
+		font-size: 20px;
+		line-height: 1.8;
+	}
+
+	.promo-form input[type=checkbox]+label {
+		color: #ffffff;
+	}
+	.promo-form input[type=checkbox]+label a {
+		color: #ffffff;
+	}
+
+	&__right-block {
+		float: right;
+		max-width: 350px;
+		text-align: right;
+		font-family: AudiTEBold;
+		padding-top: 55px;
+	}
+	&__price {
+		font-size: 36px;
+		color: #bb0a30;
+		margin-top: 7px;
+		margin-bottom: 20px;
+
+		.small {
+			font-size: 20px;
+		}
+	}
+	&__credit {
+		margin-top: 0;
+		margin-bottom: 20px;
+		color: #000000;
+		font-size: 20px;
+	}
+}

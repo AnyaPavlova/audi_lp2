@@ -1,0 +1,29 @@
+.model-menu {
+	background-color: #000000;
+
+	&__inner {
+		padding: 0 50px;
+	}
+
+	&__models {
+		margin: 0;
+		justify-content: flex-start;
+	}
+	&__item {
+		margin-right: 45px;
+		font-family: AudiTENormal;
+		letter-spacing: 0.1em;
+	}
+	&__model-row {
+		margin-right: 65px;
+		letter-spacing: 0;
+	}
+	&__item a {
+		color: #ffffff;
+		font-size: 16px;
+		font-family: AudiTENormal;
+	}
+	&__item--active a {
+		color: #bb0a30;
+	}
+}

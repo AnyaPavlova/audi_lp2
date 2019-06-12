@@ -14,3 +14,19 @@
   display: block;
   clear: both;
 }
+.inner-all {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 55px;
+
+  @include media-breakpoint-down($mobile_version) {
+    padding: 0 5px;
+  }
+}
+.inner-all:after {
+  content: '';
+  display: block;
+  clear: both;
+}
