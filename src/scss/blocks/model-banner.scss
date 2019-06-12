@@ -62,4 +62,12 @@
 		color: #000000;
 		font-size: 20px;
 	}
+	&__bottom-block {
+		position: absolute;
+		bottom: 55px;
+	}
+	// &__bonus-item {
+	// 	display: flex;
+	// 	justify-content: center;
+	// }
 }

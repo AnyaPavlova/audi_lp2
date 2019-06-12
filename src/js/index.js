@@ -1,6 +1,7 @@
 /*require("./timer");*/
 require("./carousel")
 require("./select");
+require("./carousel2");
 /*require("./script-service.js");*/
 require("./audi-lp2.js");
 import "@fancyapps/fancybox";
