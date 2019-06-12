@@ -1,6 +1,12 @@
 .model-banner {
 	position: relative;
 	color: #ffffff;
+	overflow: hidden;
+
+	@media all and (max-width:1440px) {
+		background:#162026;
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		img {
@@ -65,9 +71,18 @@
 	&__bottom-block {
 		position: absolute;
 		bottom: 55px;
+
+		@media all and (max-width:1440px) {
+			bottom: 20px;
+			left: 10px;
+		}
 	}
-	// &__bonus-item {
-	// 	display: flex;
-	// 	justify-content: center;
-	// }
+
+	.promo-num--line .promo-num__digit {
+		@media all and (max-width:1440px) {
+			white-space: nowrap;
+			font-size: 32px;
+		}
+	}
+	
 }
