@@ -170,10 +170,17 @@
     }
     .item__head-left {
       flex-basis: 65%;
+      @media all and (max-width:767px) {
+        flex-basis: 50%;
+      }
     }
 
     .item__head-right {
       flex-basis: 35%;
+
+      @media all and (max-width:767px) {
+        flex-basis: 50%;
+      }
     }
   }
   .showcase__item .item__button .button__select {

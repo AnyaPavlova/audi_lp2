@@ -22,7 +22,7 @@ owl.owlCarousel({
     itemsMobile: ["100%", 1],
     itemsTablet: ["100%", 1],
     URLhashListener:true,
-    startPosition: 'q8',
+    startPosition: 'a3',
     dotsContainer: '.best-offer__nav'
 });
 
