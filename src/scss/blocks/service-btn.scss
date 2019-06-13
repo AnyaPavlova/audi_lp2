@@ -1,5 +1,9 @@
 .service-btn {
 
+	@include media-breakpoint-down($mobile_version) {
+		display: none;
+	}
+
 	margin-bottom: 50px;
 	
 	&__item {

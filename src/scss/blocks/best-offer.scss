@@ -7,6 +7,11 @@
   	background-size: cover;
   	padding-top: 40px;
   	padding-bottom: 200px;
+
+    @media all and (max-width:991px) {
+      padding-top: 20px;
+      padding-bottom: 105px;
+    }
   }
   &__title {
   	text-align: center;
@@ -14,6 +19,10 @@
   	font-size: 32px;
   	letter-spacing: -0.01em;
   	color: #ffffff;
+
+    @media all and (max-width:991px) {
+      font-size: 18px;
+    }
   }
   &__nav {
   	display: flex;
@@ -21,12 +30,24 @@
   	justify-content: center;
   	list-style: none;
     padding-bottom: 10px;
+
+    position: relative;
+    z-index: 5;
+
+    @include media-breakpoint-down($mobile_version) {
+      overflow: scroll;
+    }
   }
   &__nav-item {
   	color: #ffffff;
   	font-family: AudiTENormal;
   	font-size: 16px;
   	padding: 10px 35px;
+
+    @media all and (max-width:991px) {
+      font-size: 14px;
+      padding: -10px 20px;
+    }
 
   	a {
   		color: #ffffff;
@@ -38,7 +59,15 @@
   }
   &__main {
     margin-top: -200px;
+    position: relative;
+    z-index: 3;
 
+  }
+
+  &__slider-inner {
+    @include media-breakpoint-down($mobile_version) {
+      padding: 0;
+    }
   }
 }
 .preference__block .inline__header {

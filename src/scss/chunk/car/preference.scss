@@ -55,6 +55,9 @@
   &--choise {
     background:  url("../img/used-cars-small.png") no-repeat left center;
   }
+  @include media-breakpoint-down($mobile_version) {
+      filter: invert(1);
+    }
 }
 @include media-breakpoint-down($mobile_version){
   .inline__header{
@@ -76,12 +79,13 @@
   .preference__text-head{
     font-size: 16px;
     color: #000;
+    margin-top: 20px;
   }
   .preference__icon{
     font-size: 12px;
-    color:#000;
-    &::before{
-      filter:invert(1);
-    }
+    // color:#000;
+    // &::before{
+    //   filter:invert(1);
+    // }
   }
 }
