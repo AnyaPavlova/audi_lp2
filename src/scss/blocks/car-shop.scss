@@ -1,6 +1,10 @@
 .car-shop {
 	margin-bottom: 60px;
 
+	@media all and (max-width:767px) {
+		margin-bottom: 30px;
+	}
+
 	.inner {
 		max-width: 1500px;
 
@@ -28,6 +32,10 @@
 		font-size: 16px;
 		font-family: AudiTNormal;
 		text-align: center;
+
+		@media all and (max-width:767px) {
+			margin-top: 25px;
+		}
 
 		a:after {
 			content: "";
@@ -67,6 +75,10 @@
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
+		@media all and (max-width:767px) {
+			padding-top: 27px;
+			padding-bottom: 27px;
+		}
 	}
 
 	&__row {
@@ -83,6 +95,13 @@
 
 		@media all and (max-width:991px) {
 			top: 0px;
+		}
+		@media all and (max-width:767px) {
+			top: 12px;
+			left: -5px;
+			img {
+				height: 48px;
+			}
 		}
 	}
 	&__block-photo {
@@ -103,6 +122,9 @@
 
 		@media all and (max-width:991px) {
 			width: 50%;
+		}
+		@media all and (max-width:767px) {
+			width: 100%;
 		}
 	}
 	&__options {
@@ -130,6 +152,11 @@
 	&__opt-list {
 		list-style: none;
 		padding-left: 0;
+
+		@media all and (max-width:767px) {
+			position: absolute;
+			bottom: 60px;
+		}
 	}
 	&__opt {
 		padding-left: 65px;
@@ -141,6 +168,9 @@
 		@media all and (max-width:991px) {
 			font-size: 12px;
 		}
+		@media all and (max-width:767px) {
+			padding: 10px 0 10px 50px;
+		}
 
 		strong {
 			font-family: AudiTEBold;
@@ -148,18 +178,34 @@
 		&--power {
 			background:url(../img/pover-icon.png) no-repeat left center;
 			background-size: 48px 17px;
+
+			@media all and (max-width:767px) {
+				background-size: 36px 12px;
+			}
 		}
 		&--transmission {
 			background:url(../img/transmission-icon.png) no-repeat 3px center;
 			background-size: 34px 24px;
+
+			@media all and (max-width:767px) {
+				background-size: 27px 18px;
+			}
 		}
 		&--driving {
 			background:url(../img/driving-icon.png) no-repeat left center;
 			background-size: 38px 30px;
+
+			@media all and (max-width:767px) {
+				background-size: 29px 23px;
+			}
 		}
 		&--fuel {
 			background:url(../img/fuel-icon.png) no-repeat 7px center;
 			background-size: 28px 33px;
+
+			@media all and (max-width:767px) {
+				background-size: 22px 25px;
+			}
 		}
 	}
 	&__offer {
@@ -174,10 +220,18 @@
 				font-family: AudiTEBold;
 			}
 		}
+
+		@media all and (max-width:767px) {
+			text-align: left;
+		}
 	}
 	&__question {
 		position: absolute;
 		right: 0;
+
+		@media all and (max-width:767px) {
+			display: none;
+		}
 	}
 	&__offer-text {
 		font-family: AudiTENormal;
@@ -198,6 +252,9 @@
 		@media all and (max-width:991px) {
 			font-size: 18px;
 		}
+		@media all and (max-width:767px) {
+			margin-top: 15px !important;
+		}
 
 		strong {
 			font-size: 32px;
@@ -206,7 +263,14 @@
 			top: 5px;
 			background-image: url(../img/question_car-big.png);
 			background-size: contain;
+
+			@media all and (max-width:767px) {
+				position: relative;
+				display: inline-block;
+				top: 0;
+			}
 		}
+
 	}
 	&__btn {
 		font-family: AudiTEBold;
@@ -215,6 +279,13 @@
 		height: 67px;
 		margin-top: 7px;
 		font-size: 16px;
+
+		@media all and (max-width:767px) {
+			height: 50px;
+			font-size: 14px;
+
+			margin-top: 160px;
+		}
 	}
 	&__gallery {
 		padding-bottom: 35px;

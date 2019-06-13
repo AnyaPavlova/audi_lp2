@@ -4,9 +4,28 @@
 	overflow: hidden;
 	background-color: #020305;
 
+	&__bg {
+		@media all and (max-width:767px) {
+			position: relative;
+			width: 100%;
+			height: 0;
+			overflow: hidden;
+			padding-bottom: 87.5%;
+		}
+	}
+
 	&__bg  img {
 		width: 100%;
 		display: block;
+
+		@media all and (max-width:767px) {
+			position: absolute;
+			height: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0;
+			width: auto;
+		}
 	}
 	&__info {
 		z-index: 2;
@@ -27,6 +46,15 @@
 			left: auto;
 			right: auto;
 		}
+		@media all and (max-width:767px) {
+			margin-top: -50px;
+		}
+		.inner {
+			@media all and (max-width:767px) {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
 	}
 	&__top-block {
 		position: absolute;
@@ -36,6 +64,9 @@
 			position: static;
 			top: auto;
 			margin-bottom: 20px;
+		}
+		@media all and (max-width:767px) {
+			margin-bottom: 30px;
 		}
 	}
 	&__title {
@@ -49,9 +80,16 @@
 			margin-top: -25px;
 			margin-bottom: 20px;
 		}
+		@media all and (max-width:767px) {
+			margin-bottom: 30px;
+		}
 	}
 	&__btn {
 		min-width: 255px;
+
+		@media all and (max-width:575px) {
+			width: 100%;
+		}
 	}
 	&__bottom-block {
 		position: absolute;
@@ -61,6 +99,9 @@
 		@media all and (max-width:991px) {
 			position: static;
 			bottom: auto;
+		}
+		@media all and (max-width:767px) {
+			margin-bottom: 8px;
 		}
 	}
 }

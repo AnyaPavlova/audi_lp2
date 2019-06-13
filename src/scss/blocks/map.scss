@@ -3,6 +3,10 @@
 	height: 750px;
 	position: relative;
 
+	@media all and (max-width:767px) {
+		display: none;
+	}
+
 	&__yandex {
 		width: 100%;
 		height: 750px;
@@ -100,3 +104,21 @@
       text-decoration: underline;
     }
   }
+
+ .contact-mob {
+ 	display: none;
+
+ 	@media all and (max-width:767px) {
+ 		display: block;
+ 	}
+
+ 	&__link {
+ 		display: inline-block;
+ 		bottom: 0;
+ 		padding: 0;
+ 		margin: 0;
+ 		padding-left: 34px;
+ 		color: #bd1237;
+ 		text-decoration: underline;
+ 	}
+ } 

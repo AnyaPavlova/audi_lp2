@@ -10,6 +10,11 @@
 	@media all and (max-width:991px) {
 		padding-bottom: 30px;
 	}
+	@media all and (max-width:767px) {
+		h1.promo-banner__title {
+			margin-bottom: 0;
+		}
+	}
 
 	&__bg {
 		img {
@@ -35,6 +40,9 @@
 			left: auto;
 			right: auto;
 			margin-top: -50px;
+		}
+		@media all and (max-width:767px) {
+			margin-top: -25px;
 		}
 
 	}
@@ -70,12 +78,12 @@
 		}
 	}
 
-	.promo-form input[type=checkbox]+label {
-		color: #ffffff;
-	}
-	.promo-form input[type=checkbox]+label a {
-		color: #ffffff;
-	}
+	// .promo-form input[type=checkbox]+label {
+	// 	color: #ffffff;
+	// }
+	// .promo-form input[type=checkbox]+label a {
+	// 	color: #ffffff;
+	// }
 
 	&__right-block {
 		float: right;
@@ -130,6 +138,10 @@
 			position: static;
 			bottom: auto;
 			left: auto;
+		}
+		@media all and (max-width:767px) {
+			padding-left: 15px;
+			padding-right: 15px;
 		}
 	}
 

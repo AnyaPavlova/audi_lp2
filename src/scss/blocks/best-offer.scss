@@ -74,4 +74,8 @@
   background: #fefefe;
   margin: 0;
   padding: 30px;
+
+  @media all and (max-width:767px) {
+    padding: 10px;
+  }
 }
