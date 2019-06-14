@@ -129,6 +129,7 @@
 	&__bottom-block {
 		position: absolute;
 		bottom: 55px;
+		width: 100%;
 
 		@media all and (max-width:1440px) {
 			bottom: 20px;

@@ -34,8 +34,10 @@
     position: relative;
     z-index: 5;
 
-    @include media-breakpoint-down($mobile_version) {
+    @media all and (max-width:991px) {
       overflow: scroll;
+      justify-content: flex-start;
+      padding-left: 0;
     }
   }
   &__nav-item {

@@ -4,7 +4,7 @@
 	&__inner {
 		padding: 0 50px;
 
-		@media all and (max-width:991px) {
+		@media all and (max-width:1199px) {
 			padding: 0 5px;
 		}
 	}
@@ -15,26 +15,34 @@
 		@include media-breakpoint-down($mobile_version) {
 			padding: 20px 15px;
 		}
-		@media all and (max-width:991px) {
-			padding: 10px 0;
+		@media all and (max-width:1199px) {
+			padding: 12px 0;
 		}
 	}
 	&__item {
 		margin-right: 65px;
 		font-family: AudiTENormal;
 		letter-spacing: 0.1em;
+
+		@media all  and (max-width:991px) {
+			margin-right: 40px;
+		}
 	}
 	&__model-row {
 		margin-right: 65px;
 		letter-spacing: 0;
 		white-space: nowrap;
+
+		@media all  and (max-width:991px) {
+			margin-right: 40px;
+		}
 	}
 	&__item a {
 		color: #ffffff;
 		font-size: 16px;
 		font-family: AudiTENormal;
 
-		@media all and (max-width:991px) {
+		@media all and (max-width:1199px) {
 			font-size: 14px;
 		}
 	}

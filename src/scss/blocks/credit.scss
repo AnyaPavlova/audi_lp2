@@ -4,6 +4,10 @@
 	overflow: hidden;
 	background-color: #020305;
 
+	.inner {
+		max-width: 100%;
+	}
+
 	&__bg {
 		@media all and (max-width:767px) {
 			position: relative;

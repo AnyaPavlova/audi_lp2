@@ -1,15 +1,17 @@
 .showcase-audi {
   overflow: hidden;
   padding-top: 25px;
+  padding-bottom: 70px;
 
   @media all and (max-width: 1199px) {
     padding-top: 15px;
+    padding-bottom: 25px;
   }
 
   &__container {
     @media all and (max-width:991px)  {
       padding-left: 0;
-      padding-right: 0;
+      padding-right: 0;     
     }
   }
 
@@ -24,8 +26,10 @@
       display: flex;
       flex-wrap: nowrap;
       width: 100%;
-      overflow: scroll;
       padding: 0 15px;
+    }
+    @media all and (max-width:767px) {
+      overflow: scroll;
     }
   }
   &__model-item {
