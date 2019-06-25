@@ -50,6 +50,7 @@
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-top: -1px;
+	position: relative;
 
 	@media all and (max-width:991px) {
 		background:#f2f2f2;
@@ -346,5 +347,26 @@
 			z-index: 6;
 		}
 	}
+
+	&__bg {
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 55%;
+		transform: translateX(-50%) translateY(-50%);
+		font-size: 252px;
+		letter-spacing: -0.01em;
+		color: #e5e5e5;
+		font-family: AudiTNormal;
+	}
+	&:hover &__bg {
+		display: block;
+
+		@media all and (max-width:991px) {
+			display: none;
+		}
+
+	}
+
 	
 }

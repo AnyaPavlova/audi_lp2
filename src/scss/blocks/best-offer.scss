@@ -41,10 +41,11 @@
     }
   }
   &__nav-item {
-  	color: #ffffff;
-  	font-family: AudiTENormal;
+  	color: #b6b1a9;
+  	font-family: AudiTEBold;
   	font-size: 16px;
-  	padding: 10px 35px;
+  	padding: 7px 35px;
+    letter-spacing: 0.1em;
 
     @media all and (max-width:991px) {
       font-size: 14px;
@@ -52,11 +53,14 @@
     }
 
   	a {
-  		color: #ffffff;
+  		color: #b6b1a9;
+      padding-top: 3px;
+      padding-bottom: 3px;
   	}
 
   	&.active a {
-  		color: #bb0a30;
+  		color: #ffffff;
+      border-bottom: 2px solid #ffffff;
   	}
   }
   &__main {

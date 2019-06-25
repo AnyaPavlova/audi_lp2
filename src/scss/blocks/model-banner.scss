@@ -101,7 +101,7 @@
 		}
 	}
 	&__price {
-		font-size: 36px;
+		font-size: 32px;
 		color: #bb0a30;
 		margin-top: 7px;
 		margin-bottom: 20px;
@@ -167,5 +167,18 @@
 			background-size: 40px auto !important;
 		}
 	}
+
+	input[type=checkbox]+label {
+    color: #ffffff;
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+
+  .form-block__privacy {
+  	margin-top: 15px;
+  }
 	
 }

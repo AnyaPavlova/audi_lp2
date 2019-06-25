@@ -20,7 +20,7 @@
   }
   &__models {
     justify-content: space-between;
-    padding-right: 120px;
+    padding: 8px 120px 8px 28px;
 
     @include media-breakpoint-down($mobile_version) {
       display: flex;
@@ -32,14 +32,33 @@
       overflow: scroll;
     }
   }
-  &__model-item {
+  &__model-item {    
+
     @include media-breakpoint-down($mobile_version) {
       display: block;
     }
+
+    a {
+      color: #868686;
+      font-family: AudiTEBold;
+      letter-spacing: 0.1em;
+      display: inline-block;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+      @include media-breakpoint-down($mobile_version) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
   }
   &__model-row a {
-    font-family: AudiTENormal;
-    color: #bb0a30;
+    font-family: AudiTEBold;
+    color: #ffffff;
+    border-bottom: 2px solid #b6b1a9;
 
     @include media-breakpoint-down($mobile_version) {
       white-space: nowrap;
@@ -164,9 +183,13 @@
       min-height: auto;
       font-size: 26px;
       letter-spacing: -0.01em;
+
+      strong {
+        font-size: 26px;
+      }
     }
     .item__head-header-text {
-      font-size: 20px;
+      font-size: 16px;
 
       @media all and (max-width:767px) {
         font-size: 16px;
@@ -240,6 +263,10 @@
       font-size: 16px;
       margin-top: 10px;
       margin-bottom: 13px;
+
+      strong {
+        font-size: 16px;
+      }
     }
   }
   .showcase__item .showcase__item__list li {

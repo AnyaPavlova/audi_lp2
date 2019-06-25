@@ -80,6 +80,10 @@
 		padding-left: 10px;
 		padding-right: 10px;
 		margin-top: 13px;
+
+		@media (max-width: 991px) {
+			.promo-form { max-width: 100%; }
+		}
 	}
 	&__input {
 		width: 100%;
@@ -87,11 +91,20 @@
 	}
 }
 .map__form input[type=tel], .map__form input[type=text] {
-	border: 1px solid #949494;
+	border-bottom: 1px solid #000000;
 	max-width: 100%;
+	color: #000000;
+
+	&::-webkit-input-placeholder {color:#000000; opacity: 1;}
+	&::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
+	&:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
+	&:-ms-input-placeholder      {color:#000000; opacity: 1;}
 }
 .map__form .promo-form .btn {
 	max-width: 100%;
+	width: 100%;
+	padding-top: 17px;
+	padding-bottom: 17px;
 }
 .map__form .form-block__privacy {
 	margin-top: 20px;

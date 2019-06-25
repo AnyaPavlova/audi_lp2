@@ -1,5 +1,5 @@
 .promo-banner {
-  background: linear-gradient(to bottom, #171717 0%, #171717 99.9%, #ffffff 99.9%, #ffffff 100% );
+  background: linear-gradient(to bottom, #303030 0%, #303030 99.9%, #ffffff 99.9%, #ffffff 100% );
   position: relative;  
 
   &__bg {
@@ -17,7 +17,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #171717;
+        background: #303030;
         position: absolute;
         bottom: 0;
       }
@@ -43,7 +43,7 @@
     
     @media all and (max-width:991px) {
       position: initial;
-      background-color: #171717;
+      background-color: #303030;
       padding-top: 10px;
       padding-bottom: 15px;
     }
@@ -109,7 +109,7 @@
   &__subtitle {
     font-family: AudiTENormal;
     font-size: 48px;
-    color: #bb0a30;
+    /* color: #bb0a30; */
     margin: 0;
 
     @media all and (min-width:992px) and (max-width: 1199px) {
@@ -122,7 +122,8 @@
   }
   &__welcome {
     font-family: AudiTNormal;
-    font-size: 20px;
+    font-size: 18px;
+    color: #e5e5e5;
 
     @media all and (max-width: 1199px) {
       font-size: 16px;
@@ -164,8 +165,8 @@
   }
 
   &__digit {
-    font-family: AudiTEBold;
-    color: #bb0a30;
+    font-family: AudiTENormal;
+    /* color: #bb0a30; */
     font-size: 48px;
     letter-spacing: -0.1em;
 
@@ -178,9 +179,10 @@
   }
   &__text {
     font-family: AudiTNormal;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.2;
     padding-left: 15px;
+    color: #e5e5e5;
 
     @media all and (min-width:992px) and (max-width: 1199px) {
       font-size: 16px;
@@ -220,7 +222,7 @@
     flex-wrap: wrap;    
 
     .promo-num__digit {
-      font-size: 36px;
+      font-size: 32px;
       letter-spacing: -0.01em;
       width: 100%;
 
@@ -233,7 +235,7 @@
     }
     .promo-num__text {
       padding-left: 0;
-      padding-top: 3px;
+      /* padding-top: 3px; */
       width: 100%;
     }
   }

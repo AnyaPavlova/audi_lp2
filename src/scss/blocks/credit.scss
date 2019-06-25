@@ -63,14 +63,28 @@
 	&__top-block {
 		position: absolute;
 		top: 50px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		left: 0;
+		padding-left: 50px;
+		padding-right: 50px;
+		align-items: center;
 
 		@media all and (max-width:991px) {
 			position: static;
 			top: auto;
+			left: auto;
 			margin-bottom: 20px;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		@media all and (max-width:767px) {
 			margin-bottom: 30px;
+		}
+		@media all and (max-width:575px) {
+
 		}
 	}
 	&__title {
@@ -81,7 +95,7 @@
 
 		@media all and (max-width:991px) {
 			font-size: 21px;
-			margin-top: -25px;
+			/* margin-top: -25px; */
 			margin-bottom: 20px;
 		}
 		@media all and (max-width:767px) {
@@ -90,6 +104,10 @@
 	}
 	&__btn {
 		min-width: 255px;
+
+		@media all and (max-width:991px) {
+			background-color: #292a2c;
+		}
 
 		@media all and (max-width:575px) {
 			width: 100%;
@@ -116,9 +134,9 @@
 	}
 
 	&__text {
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 1.2;
-		color: #ffffff;
+		color: #e5e5e5;
 		font-family: AudiTNormal;
 		display: block;
 
@@ -127,10 +145,10 @@
 		}
 	}
 	&__main {
-		margin-top: 17px;
+		margin-top: 10px;
 		font-size: 32px;
-		font-family: AudiTEBold;
-		color: #bb0a30;
+		font-family: AudiTENormal;
+		color: #ffffff;
 		letter-spacing: -0.01em;
 		display: block;
 

@@ -68,7 +68,7 @@
 
   .item__head_in_stock,
   .item__head_in_stock-text {
-    color: $audi_red;
+    color: #333333;
   }
   .item__head-right {
     display: flex;
@@ -79,7 +79,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid $audi_red;
+    border: 1px solid #333333;
     text-align: center;
     padding: 6px 0;
     margin-right: 5px;

@@ -26,22 +26,10 @@
 		max-width: 530px;
 		margin: auto;
 		line-height: 1.5;
+    color: #000000;
 
 		@media all and (max-width:767px) {
 			font-size: 14px;
-		}
-	}
-	&__form {
-		.row {
-			max-width: 650px;
-			margin: auto;
-			margin-top: 50px;
-			margin-bottom: 20px;
-
-			@include media-breakpoint-down($mobile_version) {
-				margin-top: 15px;
-				margin-bottom: 10px;
-			}
 		}
 	}
 	&__privacy {
@@ -51,15 +39,37 @@
 	}
 	&__btn-submit {
 		height: 100%;
+    width: 100%;
+    max-width: 100%;
 	}
+
+  &__form-inner {
+    max-width: 365px;
+    margin: auto;
+    margin-top: 20px;
+      margin-bottom: 20px;
+
+      @include media-breakpoint-down($mobile_version) {
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+  }
 }
 .question2 input[type=tel], .question2 input[type=text] {
-	border: 1px solid #949494;
+	border-bottom-color: #000000;
+  margin-bottom: 15px;
+  max-width: 100%;
+  width: 100%;
+  color: #000000;
 
-	@media all and (max-width:991px) {
+/* 	@media all and (max-width:991px) {
 		margin-bottom: 10px;
-	}
+	} */
 }
+.question2 input::-webkit-input-placeholder {color:#000000; opacity: 1;}
+.question2 input::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
+.question2 input:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
+.question2 input:-ms-input-placeholder      {color:#000000; opacity: 1;}
 .question2 input[type=checkbox]+label {
     color: #000000;
 

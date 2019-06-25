@@ -7,17 +7,21 @@
     max-width: 312px;
   }
   input[type=tel], input[type=text] {
-    border-bottom: none;
-    background-color: #ffffff;
+    /* border-bottom: none;
+    background-color: #ffffff; */
+    border-color: #ffffff;
     width: 100%;
     max-width: 312px;
     padding-left: 15px;
-    padding: 17px 0 17px 15px;
+    /* padding: 17px 0 17px 15px; */
+    padding: 12px 0 12px 0px;
     font-family: AudiTENormal;
     font-size: 16px;
+    margin-bottom: 7px;
+    color: #ffffff;
   }
 
-  .btn {
+  &__btn {
     padding-top: 17px;
     padding-bottom: 17px;
     width: 100%;
@@ -45,10 +49,10 @@
     content: '';
   }
   input[type=checkbox]+label {
-    color: #747474;
+    color: #b3b3b3;
 
     a {
-      color: #747474;
+      color: #b3b3b3;
       text-decoration: underline;
     }
   }
